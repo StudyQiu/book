@@ -6,4 +6,4 @@
 4.MySQL 8.0.25  
 5.功能：基本的crud操作和动态sql实现的模糊查询  
 展示如下：  
-
+![img](https://github.com/StudyQiu/book/blob/main/img/1.png)
