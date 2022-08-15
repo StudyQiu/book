@@ -64,7 +64,11 @@ public class BookController {
     @RequestMapping("/queryBook")
     public String queryBook(String queryBookName,Model model){
 //        List<Books> books = bookService.queryBookByName(queryBookName);
-        model.addAttribute("list",bookService.selectBookLike(queryBookName));
+        if (queryBookName == null || queryBookName == "") {
+            model.addAttribute("msg","未找到相关数据");
+        } else {
+            model.addAttribute("list",bookService.selectBookLike(queryBookName));
+        }
         return "allBook";
     }
 }
