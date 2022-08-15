@@ -50,7 +50,7 @@
                         <tr>
                             <c:if test="${book == null}">
                                 <td>
-                                    <span style="color: #ff0000; font-weight: bold">未找到相关数据</span>
+                                    <span style="color: #ff0000; font-weight: bold">${msg}</span>
                                 </td>
                             </c:if>
                             <c:if test="${book != null}">
